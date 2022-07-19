@@ -14,7 +14,8 @@ Route::get('register', [AuthController::class, 'showFormRegister'])->name('form-
 Route::post('register', [AuthController::class, 'register'])->name('register');
 
 
-Route::get('movies/{category}', [HomeController::class, 'getMovies'])->name('get-movies');;
+Route::get('movies/{category}', [HomeController::class, 'getMovies'])->name('get-movies');
+Route::get('detail-movie/{id}', [HomeController::class, 'detailMovie'])->name('detail-movie');
 
 Route::group(['middleware' => 'auth'], function () {    
 

@@ -8,7 +8,7 @@
 	</div>
 	<ul class="sidebar-menu">          
 		<li class="nav-item dropdown">
-			<a href="{{ url('/') }}" target="_blank" class="nav-link"><i class="fas fa-home"></i><span>Dashboard</span></a>            
+			<a href="{{ url('/') }}" target="_blank" class="nav-link"><i class="fas fa-home"></i><span>Home</span></a>            
 		</li>
 		<li class="menu-header">Master</li>
 		<li class="nav-item dropdown {{ set_active(['categories.index']) }}">

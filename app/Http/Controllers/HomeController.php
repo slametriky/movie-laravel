@@ -29,4 +29,11 @@ class HomeController extends Controller
 
         return response()->json($movies);
     }
+
+    public function detailMovie($movieId)
+    {
+        $data = (new MovieApi())->getDetail($movieId);
+
+        return view('detail-movie', compact('data'));
+    }
 }
