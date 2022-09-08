@@ -40,7 +40,7 @@ class AuthController extends Controller
             return redirect()->intended(route('categories.index'));
         }
      
-        return back()->with([
+        return Redirect::to('/login')->with([
             'error' => 'Email atau Password salah',
         ]);
   

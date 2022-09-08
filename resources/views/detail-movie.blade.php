@@ -26,7 +26,8 @@
 						</div>
 						<div class="article-details">
 							<div class="article-title">
-                                <p>Release Date : {{ $data['release_date'] }}</p>
+                                <p style="margin-bottom: 0px;">Release Date : {{ $data['release_date'] }}</p>
+                                <p>Status : {{ $data['status'] }}</p>
 								<h3 class="text-center">{{ $data['original_title'] }}</h3>
 							</div>
 							<p class="text-justify">
